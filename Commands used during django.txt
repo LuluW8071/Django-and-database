@@ -1,0 +1,36 @@
+python manage.py startapp polls
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+	[Create new user, email, and password]
+python manage.py runserver
+[http://127.0.0.1:8000/admin]
+	[enter you username and password]
+
+
+admin.py
+	from .models import Musician
+	admin.site.register(Musician)
+
+[Activate the virtual_env by "activate" in cmd at path env_name/Scripts/ ]
+----------------------------------------------------------------------------
+pip install django-extensions
+pip install ipython
+
+python manage.py shell
+	from appname.models import modelname
+	objects = modelname.objects.all()
+
+	for i in objects:
+		print(i.firstname)
+		print(i.lastname)
+
+Output is produced:
+modelname object (1)
+modelname object (2)
+modelname object (3)
+modelname object (4)
+modelname object (5)
+
+
