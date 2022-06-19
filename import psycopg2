@@ -1,0 +1,18 @@
+import psycopg2
+
+mydb = psycopg2.connect(
+    database="Student",
+    user="postgres",
+    password="8071",
+    host="localhost",
+    port=5432,
+)
+cursor = mydb.cursor()
+print(cursor)
+query = 'Select * from "Student"'
+cursor.execute(query)
+array=cursor.fetchall()
+print(array)
+print("Given data is:")
+for x in array:
+    print(x)
