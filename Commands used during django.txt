@@ -14,14 +14,21 @@ python manage.py runserver
 	[enter you username and password]
 
 
+pip install virtualenv
+[Choose a location for virtual environment]
+virtualenv <your venv_name>
+cd Scripts
+activate						#activates the virtual env {see left side of path in command terminal}
+
+
 [Activate the virtual_env by "activate" in cmd at path env_name/Scripts/ ]
 ----------------------------------------------------------------------------
 pip install django-extensions
 pip install ipython
 
-python manage.py shell
-	from appname.models import modelname
-	objects = modelname.objects.all()
+python manage.py shell					#this command only runs when you are inside manage.py location				
+	from <appname>.models import <modelname>
+	objects = <modelname>.objects.all()
 
 	for i in objects:
 		print(i.firstname)
