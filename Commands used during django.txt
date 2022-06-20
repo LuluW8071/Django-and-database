@@ -30,9 +30,9 @@ python manage.py shell					#this command only runs when you are inside manage.py
 	from <appname>.models import <modelname>
 	objects = <modelname>.objects.all()
 
-	for i in objects:
-		print(i.firstname)
-		print(i.lastname)
+	ffor i in objects:
+   ...:     print(i.first_name)				#print(i.<objects name that you typed in models.py at class>)
+   ...:     print(i.last_name)
 
 Output is produced:
 modelname object (1)
