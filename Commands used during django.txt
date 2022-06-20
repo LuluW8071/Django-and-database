@@ -1,3 +1,8 @@
+django-admin startproject <myapp-name>			#creates new project
+
+cd <myapp-name>
+python manage.py runserver				#this command only runs when you are inside manage.py location
+
 python manage.py startapp polls
 
 python manage.py makemigrations
