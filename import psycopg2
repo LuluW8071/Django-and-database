@@ -1,3 +1,5 @@
+#pip install psycopg2 -----------------------{in command terminal if you donot have psycopg2 installed}
+
 import psycopg2
 
 mydb = psycopg2.connect(
