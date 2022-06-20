@@ -14,10 +14,6 @@ python manage.py runserver
 	[enter you username and password]
 
 
-admin.py
-	from .models import Musician
-	admin.site.register(Musician)
-
 [Activate the virtual_env by "activate" in cmd at path env_name/Scripts/ ]
 ----------------------------------------------------------------------------
 pip install django-extensions
